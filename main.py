@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 # py  C:\Users\Giovanni\PycharmProjects\discordBot\main.py
-botToken='MTE1MDE2NjExOTk3NDQ0NTEwNg.GaoT85.Z3m9mcTiP0Z5geVEYkVD26uRZLb9IDlMZhdeGw'
+botToken='discord developer portal'
 botPrefix='-'
 
 client = commands.Bot(command_prefix=botPrefix,intents=discord.Intents.all())
