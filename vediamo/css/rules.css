@@ -1,0 +1,29 @@
+.sidebar {
+  background-color: brown;
+  height: 100%;
+  width: 200px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  
+}
+
+.rule-link{
+  width: 100% ;
+}
+
+.active-rule-link{
+  width: 100% ;
+  background-color:#84A98C;
+}
+
+.rule-title-div{
+  display: flex;
+  justify-content: center;
+  background-color:#354F52;
+}
+
+.rule-title {
+  text-align: center;
+  font-weight: bold;
+}
