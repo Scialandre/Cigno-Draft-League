@@ -8,11 +8,11 @@
   
 }
 
-.rule-link{
+.rule-link{   /*classe per a*/
   width: 100% ;
 }
 
-.active-rule-link{
+.active-rule-link{  /*classe per button*/
   width: 100% ;
   background-color:#84A98C;
 }
@@ -26,4 +26,20 @@
 .rule-title {
   text-align: center;
   font-weight: bold;
+}
+
+.rule-body{
+  height: 100%;
+  width: 100%;
+  /*background-color: black;*/
+  display: flex;;
+}
+
+.rule-text-div{
+  width: 100%;
+  align-content: center;
+}
+
+.rule-text-p{
+  text-align: center;
 }

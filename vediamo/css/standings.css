@@ -1,0 +1,47 @@
+.season-title{
+  font-weight: bold;
+  font-size: 20px ;
+  text-align: center;
+}
+
+.standings-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.leaderboard{
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+
+  width: 90%;
+  height: 100%;
+}
+
+.player-container-light{
+  display: flex;
+  background-color: #52796F;
+  align-items: center;
+}
+
+.player-container-dark{
+  display: flex;
+  background-color: #354F52;
+  align-items: center;
+}
+
+.player-logo{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.player-name{
+  height:100%;
+  width: 100px;
+  text-align: center;
+}
+
+.team-name{}
