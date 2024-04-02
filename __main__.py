@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import logging
+from sys import argv
 
 from var import *
 
@@ -75,5 +76,50 @@ async def link(ctx):
 
 
 
+def htmlScript():
+    infile = open(r'C:\Users\scial\OneDrive\Desktop\progetti_html\Cigno-Draft-League\vediamo\standings\standings.html','r')
+    outfile = open(r'C:\Users\scial\OneDrive\Desktop\progetti_html\Cigno-Draft-League\vediamo\standings\standings1.html','w')
+    line='<!--generated through python-->\n'
+    alternator = True
+
+    while  not (line.endswith('<!---->\n')):
+        outfile.write(line)
+        line=infile.readline()
+
+
+    for coach in coaches:
+
+        if alternator:
+            theme = 'light'
+        else:
+            theme = 'dark'
+
+        alternator = not alternator
+
+        outfile.write(f'<a href="../team/{coach}.html">\n<div class="player-container-{theme}">\n          <img src="../images/{coach}.jpg" class="player-logo">\n          <p class="player-name">\n            {coach}\n          </p>\n          <p class="team-name">{coach}</p>\n        </div>\n</a>')
+
+
+
+
+    outfile.write('    </div>\n  </div>\n</html>')
+      
+    
+
+  
+
+
+
+
+    infile.close()
+    outfile.close()
+    
+    #for coach in coaches:
+
+
+
+
 if __name__ == "__main__":
-    client.run(botToken)
+    if argv[1]=='bot':
+        client.run(botToken)
+    elif argv[1]=='script':
+        htmlScript()
