@@ -16,6 +16,7 @@ def htmlScript():
     outfile = open(r'C:\Users\scial\OneDrive\Desktop\progetti_html\Cigno-Draft-League\vediamo\standings\standings1.html','w')
     line='<!--generated through python-->\n'
     alternator = True
+    i=1
 
     while  not (line.endswith('<!---->\n')):
         outfile.write(line)
@@ -31,9 +32,9 @@ def htmlScript():
 
         alternator = not alternator
 
-        outfile.write(f'<a href="../team/{coach}.html">\n<div class="player-container-{theme}">\n          <img src="../images/{coach}.jpg" class="player-logo">\n          <p class="player-name">\n            {coach}\n          </p>\n          <p class="team-name">{coach}</p>\n        </div>\n</a>')
+        outfile.write(f'<a href="../team/{coach}.html">\n<div class="player-container-{theme}">\n                    <div class="position-div">\n            <p class="position-p">\n              {i}\n            </p>\n          </div><img src="../images/{coach}.jpg" class="player-logo">\n          <p class="player-name">\n            {coach}\n          </p>\n          <p class="team-name">{coach}</p>\n        </div>\n</a>')
 
-
+        i+=1
 
 
     outfile.write('    </div>\n  </div>\n  <div class="footer"></div>\n</html>')
