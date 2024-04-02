@@ -50,6 +50,7 @@ button:hover {
   width: 100px;
   height: 100px;
   object-fit: cover;
+  padding: 0px;
 }
   
 .div-logo{
@@ -77,4 +78,9 @@ button:hover {
   width: 100%;
   justify-content: space-between;
   display: flex;
+}
+
+.footer{
+  height: 60px;
+  width: 100%;
 }

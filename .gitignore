@@ -1,4 +1,5 @@
 /ignore/
-var.py
+private_var.py
 
 /__pycache__/
+/pythonScripts/__pycache__
