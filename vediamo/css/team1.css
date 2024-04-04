@@ -1,0 +1,72 @@
+.h-spacer{
+    height: 60px;
+    width: 100%;
+    background-color: brown;
+  }
+
+.team-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.team-container{
+  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  grid-template-rows: 4fr 2fr;
+  
+
+  width: 90%;
+  height: 100%;
+}
+
+.team-logo-div{
+  height: 100%;
+  background-color: blueviolet;
+}
+
+.team-members-container{
+  background-color: bisque;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.team-logo{
+  width: 100%;
+  object-fit: fit;
+  
+}
+
+.team-info{
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+.member-box-light{
+  background-color: #52796F;
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.member-box-dark{
+  background-color: #354F52;
+  height: 100%;
+  width: 100%;
+}
+
+.member-sprite{
+  width: 100%;
+}
+
+.member-name{
+  text-align: center;
+  font-weight: bold;
+  text-wrap: pretty;
+}
